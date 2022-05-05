@@ -45,8 +45,8 @@ zmiana nazwy firmy
 
 
 
-@MrAdamskyyS
-#### Adam Sobkowiak 
+
+#### Adam Sobkowiak -> @MrAdamskyyS
 -   opracowanie i wdrożenie grafik
 -   wystylowanie aplikacji
 

@@ -19,14 +19,14 @@ mysql
 - kupno wybranych filmów
 
 ## Dodatkowe możliwości administratora
+ 
  Admin panel:
- -
-dodawanie użytkowników
-usuwanie użytkowników
-dodawanie filmów
-usuwanie filmów 
-nadanie / zabranie praw administratora użytkownikowi
-zmiana nazwy firmy
+  - dodawanie użytkowników
+  - usuwanie użytkowników
+  - dodawanie filmów
+  - usuwanie filmów 
+  - nadanie / zabranie praw administratora użytkownikowi
+  - zmiana nazwy firmy
 
 ## Wygląd aplikacji
 

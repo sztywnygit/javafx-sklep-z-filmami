@@ -43,6 +43,8 @@ zmiana nazwy firmy
 #### Seweryn Bajowski 
 -   opracowanie i implementacja logiki programu
 
+
+
 @MrAdamskyyS
 #### Adam Sobkowiak 
 -   opracowanie i wdrożenie grafik

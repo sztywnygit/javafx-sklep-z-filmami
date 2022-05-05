@@ -28,6 +28,14 @@ mysql
   - nadanie / zabranie praw administratora użytkownikowi
   - zmiana nazwy firmy
 
+ ## Uruchomienie aplikacji
+ Zbuildować mavenem projekt -> uruchomić klasę src/main/java/com.example/wytwornia/Main.java
+ 
+ 
+ Baza danych do importu:
+ [baza_danych.zip](https://github.com/sztywnygit/javafx-sklep-z-filmami/files/8633601/baza_danych.zip)
+
+
 ## Wygląd aplikacji
 
 

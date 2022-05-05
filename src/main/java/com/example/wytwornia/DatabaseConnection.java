@@ -12,7 +12,7 @@ public class DatabaseConnection {
 
     public DatabaseConnection() {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://192.166.219.220:3306/sbas", "sbas", "sY.2bUJ.sr");     //("jdbc:mysql://localhost:3306/wytwornia_sbas", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sklep-z-filmami", "root", "");
             statement = connection.createStatement();
         }
         catch (Exception e) {

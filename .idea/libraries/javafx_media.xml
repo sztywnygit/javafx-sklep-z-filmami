@@ -5,7 +5,6 @@
       <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx.swing.jar!/" />
       <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx.web.jar!/" />
       <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx-swt.jar!/" />
-      <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx.graphics.jar!/" />
       <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx.controls.jar!/" />
       <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx.base.jar!/" />
       <root url="jar://$PROJECT_DIR$/.idea/libraries/lib/javafx.fxml.jar!/" />

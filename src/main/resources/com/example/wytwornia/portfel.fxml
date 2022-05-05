@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="434.0" stylesheets="@darkWalletPanelTheme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wytwornia.PortfelController">
+   <children>
+      <Label fx:id="labelDostepneSrodki" layoutX="14.0" layoutY="27.0" prefHeight="39.0" prefWidth="260.0" text="Dostępne środki: " textAlignment="CENTER">
+         <font>
+            <Font name="System" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPortfelAmount" layoutX="217.0" layoutY="28.0" prefHeight="38.0" prefWidth="107.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font name="System" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelKwota" layoutX="15.0" layoutY="95.0" prefHeight="36.0" prefWidth="107.0" text="Kwota" textAlignment="CENTER">
+         <font>
+            <Font name="System" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kwotaAmount" alignment="CENTER_RIGHT" layoutX="124.0" layoutY="98.0" prefHeight="29.0" prefWidth="149.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonWyplata" layoutX="210.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnPortfelWyplata" prefWidth="90.0" text="Wypłata" />
+      <Button fx:id="buttonAnuluj" layoutX="320.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnAnulujOnAction" prefHeight="18.0" prefWidth="95.0" text="Anuluj" />
+      <RadioButton layoutX="227.0" layoutY="134.0" mnemonicParsing="false" selected="true" text="przelewy24">
+         <toggleGroup>
+            <ToggleGroup fx:id="portfelScene" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioVisa" layoutX="227.0" layoutY="154.0" mnemonicParsing="false" text="karta VISA" toggleGroup="$portfelScene" />
+      <Button fx:id="buttonWplata" layoutX="113.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnPortfelWplata" prefHeight="39.0" prefWidth="90.0" text="Wpłata" />
+      <Label fx:id="labelWaluta" layoutX="328.0" layoutY="95.0" prefHeight="25.0" prefWidth="60.0" text="zł" textAlignment="CENTER">
+         <font>
+            <Font name="System" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-83.0" layoutY="78.0" prefHeight="17.0" prefWidth="516.0" />
+   </children>
+</AnchorPane>

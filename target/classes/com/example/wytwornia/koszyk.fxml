@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="694.0" prefWidth="717.0" stylesheets="@darkCartTheme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wytwornia.KoszykController">
+   <children>
+      <Label fx:id="labelInitial" layoutX="44.0" layoutY="11.0" text="Oto filmy, które wybrałeś">
+         <font>
+            <Font name="System" size="23.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="35.0" layoutY="49.0" prefHeight="344.0" prefWidth="641.0">
+         <content>
+            <TableView fx:id="tableViewKoszyk" prefHeight="344.0" prefWidth="641.0" stylesheets="@koszykTableView.css">
+              <columns>
+                <TableColumn fx:id="colTitle" editable="false" prefWidth="186.0" resizable="false" text="Title" />
+                <TableColumn fx:id="colDirector" editable="false" minWidth="0.0" prefWidth="185.0" resizable="false" text="Director" />
+                  <TableColumn fx:id="colGenre" editable="false" prefWidth="184.0" resizable="false" text="Genre" />
+                  <TableColumn fx:id="colPrice" editable="false" prefWidth="85.0" resizable="false" text="Price (PLN)" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label fx:id="labelPodsumowanie" layoutX="427.0" layoutY="439.0" text="Podsumowanie">
+         <font>
+            <Font name="System" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDoZaplaty" layoutX="429.0" layoutY="473.0" prefHeight="26.0" prefWidth="89.0" text="Do zapłaty:">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMetodaPlatnosci" layoutX="429.0" layoutY="499.0" prefHeight="26.0" prefWidth="130.0" text="Metoda płatności">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioPortfel" layoutX="427.0" layoutY="525.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="130.0" selected="true" text="Portfel (dostępne:">
+         <toggleGroup>
+            <ToggleGroup fx:id="paymentMethod" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioVisa" layoutX="427.0" layoutY="548.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="89.0" text="Karta VISA" toggleGroup="$paymentMethod" />
+      <Label fx:id="lblDoZaplatyAmount" layoutX="512.0" layoutY="478.0" prefHeight="17.0" prefWidth="89.0" />
+      <RadioButton fx:id="radioPrzelewy24" layoutX="427.0" layoutY="570.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="89.0" text="przelewy24" toggleGroup="$paymentMethod" />
+      <Label fx:id="lblDostepneSrodki" layoutX="554.0" layoutY="523.0" prefHeight="20.0" prefWidth="130.0" text="temp" />
+      <Button fx:id="buttonZaplac" layoutX="428.0" layoutY="596.0" mnemonicParsing="false" onAction="#btnZaplac" prefWidth="89.0" text="Zapłać" />
+      <Button fx:id="buttonAnuluj" layoutX="526.0" layoutY="596.0" mnemonicParsing="false" onAction="#btnAnulujOnAction" prefWidth="89.0" text="Anuluj" />
+      <Button fx:id="buttonUsunZKoszyka" layoutX="532.0" layoutY="393.0" mnemonicParsing="false" onAction="#btnUsunZKoszyka" prefHeight="25.0" prefWidth="144.0" text="Usuń z koszyka" />
+      <Separator layoutX="-7.0" layoutY="422.0" prefHeight="17.0" prefWidth="724.0" />
+   </children>
+</AnchorPane>

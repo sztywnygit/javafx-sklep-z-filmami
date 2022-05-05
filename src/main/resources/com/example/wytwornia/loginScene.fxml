@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wytwornia.LoginController">
+   <children>
+      <ImageView fitHeight="476.0" fitWidth="297.0">
+         <image>
+            <Image url="@login_graph_white.png" />
+         </image>
+      </ImageView>
+      <TextField id="txtFieldLogin" fx:id="txtFieldLogin" layoutX="29.0" layoutY="95.0" prefHeight="70.0" prefWidth="239.0" promptText="Login" style="-fx-background-radius: 0; -fx-border-color: black;">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <PasswordField id="txtFieldPassword" fx:id="txtFieldPassword" layoutX="29.0" layoutY="189.0" prefHeight="70.0" prefWidth="239.0" promptText="Hasło" style="-fx-border-radius: 0; -fx-border-color: black;">
+         <font>
+            <Font size="24.0" />
+         </font></PasswordField>
+      <AnchorPane layoutX="63.0" layoutY="309.0">
+         <children>
+            <Button fx:id="btnLogin" layoutX="-2.0" layoutY="-1.0" mnemonicParsing="false" onAction="#zaloguj" prefHeight="53.0" prefWidth="175.0" style="-fx-background-radius: 0; -fx-border-color: black;" text="Zaloguj">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnRegister" layoutX="61.0" layoutY="369.0" mnemonicParsing="false" onAction="#zarejestruj" prefHeight="54.0" prefWidth="175.0" style="-fx-border-radius: 0; -fx-border-color: black;" text="Zarejestruj">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label fx:id="labelNazwaFirmy" alignment="CENTER" layoutY="1.0" prefHeight="66.0" prefWidth="297.0" text="Wytwórnia Filmowa" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Text fx:id="loginProgress" fill="RED" layoutX="26.0" layoutY="291.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="243.25">
+         <font>
+            <Font size="21.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

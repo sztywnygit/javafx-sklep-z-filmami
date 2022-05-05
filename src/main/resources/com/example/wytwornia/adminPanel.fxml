@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="766.0" stylesheets="@darkAdminPanelTheme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wytwornia.AdminPanelController">
+   <children>
+      <Label fx:id="labelNazwaFirmy" layoutX="10.0" layoutY="-2.0" prefHeight="65.0" prefWidth="171.0" text="Nazwa firmy">
+         <font>
+            <Font name="System" size="21.0" />
+         </font>
+      </Label>
+      <TextField id="txtFieldCompanyName" fx:id="txtFieldCompanyName" layoutX="176.0" layoutY="17.0" />
+      <Button fx:id="buttonZmien" layoutX="380.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnChangeCompanyName" prefHeight="50.0" prefWidth="73.0" text="Zmień" />
+      <ScrollPane layoutX="19.0" layoutY="109.0" prefHeight="304.0" prefWidth="326.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="302.0" prefWidth="324.0">
+               <children>
+                  <TableView id="moviesTable" fx:id="tableViewFilmyAdminPanel" prefHeight="304.0" prefWidth="326.0">
+                    <columns>
+                      <TableColumn fx:id="colTitle" prefWidth="243.0" text="Title" />
+                        <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="82.0" text="Price (PLN)" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane layoutX="419.0" layoutY="110.0" prefHeight="304.0" prefWidth="326.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="302.0" prefWidth="324.0">
+               <children>
+                  <TableView id="usersTable" fx:id="tableViewUsersAdminPanel" prefHeight="304.0" prefWidth="326.0">
+                    <columns>
+                      <TableColumn fx:id="colLogin" prefWidth="132.0" text="Login" />
+                      <TableColumn fx:id="colPassword" prefWidth="140.0" text="Password" />
+                        <TableColumn fx:id="colAdmin" minWidth="0.0" prefWidth="53.0" text="Admin" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="labelFilmy" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="62.0" prefHeight="17.0" prefWidth="89.0" text="Filmy">
+         <font>
+            <Font name="System" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUzytkownicy" alignment="CENTER" contentDisplay="CENTER" layoutX="488.0" layoutY="62.0" prefHeight="29.0" prefWidth="163.0" text="Użytkownicy">
+         <font>
+            <Font name="System" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonUsunFilm" layoutX="254.0" layoutY="414.0" mnemonicParsing="false" onAction="#btnUsunFilm" text="Usuń film">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonUsunUzytkownika" layoutX="501.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnUsunUzytkownika" prefHeight="26.0" prefWidth="163.0" text="Usuń użytkownika">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDodajUzytkownika" layoutX="532.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnDodajUzytkownika" text="Dodaj użytkownika">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="231.0" layoutY="675.0" mnemonicParsing="false" onAction="#btnDodajFilm" text="Dodaj film">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelTytul" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="470.0" prefHeight="25.0" prefWidth="81.0" text="Tytuł">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldTitle" layoutX="128.0" layoutY="468.0" />
+      <Label fx:id="labelRezyser" alignment="CENTER_RIGHT" layoutX="32.0" layoutY="511.0" prefHeight="25.0" prefWidth="81.0" text="Reżyser">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldDirector" layoutX="128.0" layoutY="509.0" />
+      <Label fx:id="labelRokProdukcji" alignment="CENTER_RIGHT" layoutX="-8.0" layoutY="553.0" prefHeight="25.0" prefWidth="121.0" text="Rok produkcji">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldYear" layoutX="128.0" layoutY="551.0" />
+      <Label fx:id="labelLogin" alignment="CENTER_RIGHT" layoutX="396.0" layoutY="509.0" prefHeight="25.0" prefWidth="81.0" text="Login">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldLogin" layoutX="488.0" layoutY="507.0" />
+      <Label fx:id="labelHaslo" alignment="CENTER_RIGHT" layoutX="396.0" layoutY="551.0" prefHeight="25.0" prefWidth="81.0" text="Hasło">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldPassword" layoutX="488.0" layoutY="549.0" />
+      <Button fx:id="buttonAwansujNaAdmina" layoutX="419.0" layoutY="414.0" mnemonicParsing="false" onAction="#btnAwansujAdmin" prefHeight="37.0" prefWidth="163.0" text="Awansuj na admina">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelGatunek" alignment="CENTER_RIGHT" layoutX="-8.0" layoutY="595.0" prefHeight="25.0" prefWidth="121.0" text="Kategoria">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldGenre" layoutX="128.0" layoutY="593.0" />
+      <Button fx:id="buttonAnuluj" layoutX="628.0" layoutY="694.0" mnemonicParsing="false" onAction="#btnAnulujOnAction" prefHeight="25.0" prefWidth="121.0" text="Anuluj">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+      <Separator layoutX="-19.0" layoutY="46.0" prefHeight="19.0" prefWidth="792.0" />
+      <Separator layoutX="380.0" layoutY="55.0" orientation="VERTICAL" prefHeight="704.0" prefWidth="6.0" />
+      <TextField fx:id="txtFieldPrice" layoutX="128.0" layoutY="635.0" />
+      <Label fx:id="labelCena" alignment="CENTER_RIGHT" layoutX="-8.0" layoutY="637.0" prefHeight="25.0" prefWidth="121.0" text="Cena">
+         <font>
+            <Font name="System" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox id="adminRightsCheckbox" fx:id="checkBoxAdmin" layoutX="489.0" layoutY="583.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="182.0" text="Prawa Admina" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="buttonZabierzAdmina" layoutX="581.0" layoutY="414.0" mnemonicParsing="false" onAction="#btnZabierzAdmina" prefHeight="37.0" prefWidth="163.0" text="Zabierz admina">
+         <font>
+            <Font name="System" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
